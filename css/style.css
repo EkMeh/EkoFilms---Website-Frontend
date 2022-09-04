@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+    list-style: none; text-decoration: none; font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    width: 1920px;height: auto;
+    max-width: 100%; background: #D7DBDD;
+}
+
+.header
+{
+    width: 1920px;height: 100px; max-width: 100%; background:#4D5656;
+    display: flex; justify-content: space-around; align-items: center;
+}
+
+.brand
+{
+    width: 500px;height: 100px; max-width: 100%; 
+    display: flex;justify-content: center; align-items: center;
+}
+
+.brand img
+{
+    border-radius:50%;
+    margin: 0 1rem;
+}
+
+.brand h2
+{
+    text-transform: capitalize;
+    color: cornflowerblue;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+.navmenu
+{
+    width: 900px;height: 100px; max-width: 100%;
+    color: white;
+}
+
+.navmenu ul
+{
+    display: flex; justify-content: space-between; justify-items: center; 
+    align-items: center; margin: 2rem 0;
+}
+
+.navmenu ul li.active
+{
+    padding: .2rem .8rem;
+    background: #BDC3C7;
+}
+
+.navmenu ul li:hover
+{
+    padding: .2rem .8rem;
+    background: #BDC3C7;
+}
+
+.navmenu ul li:last-child
+{
+    padding: .2rem .8rem;
+    background: #797D7F;
+}
+
+.navmenu ul li a
+{
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.filter
+{
+    width: 1920px;height: 60px; max-width: 100%; background:#A6ACAF;
+    display: flex; justify-content: space-around; align-items: center;
+}
+
+.filter .filterbox 
+{
+    width: 400px; height: auto;
+    max-width: 100%; 
+}
+
+.filter .filterbox ul li a
+{
+    color: white; cursor: pointer;
+}
+
+.filter .filterbox ul li a:hover
+{
+    color: cornflowerblue;
+}
+
+.filter .filterbox ul
+{
+    display: flex; justify-content: space-around;
+}
+
+.filter .searchbox
+{
+    display: flex;
+    align-items: center;
+    width: 380px;
+    background:#1B2631;
+    height: 40px;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+
+.filter .searchbox input
+{
+    width: 330px; height: 2rem;
+    font-size: 16px; border: none;
+    background: #1B2631;
+    outline: none; margin-left: .5rem;
+    color: white;
+}
+
+.filter .searchbox input::placeholder
+{
+    color: white; opacity: .7;
+}
+
+.filter .searchbox i
+{
+    color: white;
+    font-size: 1.3rem;   
+    margin-left: .5rem; 
+    opacity: .7;
+}
+
+.main
+{
+    width: 1350px; height: auto; background: white;
+    position: relative; margin-left: 120px; margin-top: 1rem;
+    max-width: 100%; display: flex; justify-content: space-between;
+}
+
+.movie
+{
+    width: 900px; height: auto; background: white;
+    position: relative; display: flex; 
+    flex-direction: column; 
+}
+
+.mPresent
+{
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem .5rem; cursor: pointer;
+}
+
+.infoBox h2
+{
+    color: white; text-align: center;
+    width: 80px; background: #F1C40F;
+}
+
+.infoBox
+{
+    background: black; 
+    width: 280px; height: 400px; position: absolute;
+    opacity: .8; margin-top: -25.4rem; visibility: hidden;
+}
+
+.minfo:hover .infoBox
+{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.infoBox i
+{
+    color: white;
+    font-size: 4rem;
+    margin: 6.5rem;
+    margin-top: 7rem;
+}
+.movie h2
+{
+    text-transform: capitalize;
+    margin: 1rem 2rem; letter-spacing: .2rem;
+}
+
+.movF
+{
+    width: 430px; height: auto; background: #BDC3C7;
+    position: relative; display: flex; flex-direction: column;
+    border-left: .5rem solid #797D7F;
+}
+
+ .movBox 
+{
+    display: flex; flex-direction: column;
+    margin-bottom: 2rem;
+    background:#4D5656; 
+}
+
+ .movBox  h2
+{
+    text-transform: capitalize;
+    padding: 1rem 2rem; letter-spacing: .2rem;
+    background: white; width: 100%;
+}
+
+ .movBox .filmslist
+{
+    display: flex;
+    justify-content: center;
+    background: white;
+    justify-content: space-around;
+    margin-top: .5rem;
+    width: 80%;
+    margin-left: 2.7rem;
+    border-radius: 5px; 
+    align-items: center;padding: .5rem 0;
+    cursor: pointer;
+}
+ .movBox .filmslist img
+{
+    border-radius: 50%;
+}
+
+ .movBox 
+{
+    display: flex; flex-direction: column;
+    background: #BDC3C7;
+}
+
+ .movBox  h2
+{
+    text-transform: capitalize;
+    padding: 1rem 2rem; letter-spacing: .2rem;
+    background: white; width: 100%;
+}
+
+.movBox select
+{
+    width: 80%; padding: .2rem;
+    margin: .3rem 0;
+    margin-left: 2.6rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    border-radius:4px; outline: none;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+}
+
+.movBox button
+{
+    width: 25%;
+    text-transform: uppercase;
+    background: #1B2631; border: none;
+    padding: .3rem 0; margin-left: 10rem;
+    margin-top:1rem; margin-bottom: 1rem;
+    cursor: pointer; color: white;
+}
+
+.movBox button:hover
+{
+    background:#797D7F;
+}
+
+.page
+{
+    width: 20%;
+    margin-left: 22rem;
+    margin-bottom: 1rem;
+}
+
+.page ul 
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.page ul li a
+{
+    padding: .3rem;
+    background: #1B2631;
+    color: white;
+}
